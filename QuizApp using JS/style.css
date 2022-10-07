@@ -258,11 +258,16 @@ fieldset {
 }
 
 .answer_option span:hover {
-
+  cursor: pointer;
   background-color: var(--primary);
   color: var(--pure);
   border: 2px solid var(--primary);
   transition: all.3s ease;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: none;
 }
 
 /*Start color answer */
@@ -330,6 +335,7 @@ fieldset {
   border: 1px solid var(--primary);
   color: var(--primary);
   transition: all.3s ease;
+  cursor: pointer;
 }
 
 .see_result_btn:hover {
@@ -337,6 +343,7 @@ fieldset {
   border: 1px solid var(--primary);
   color: green;
   transition: all.3s ease;
+  cursor: pointer;
 }
 
 /*  style result box */
@@ -393,6 +400,7 @@ last_btn .last_btn {
   border: 3px solid var(--border);
   color: var(--primary);
   transition: all.3s ease;
+  cursor: pointer;
 }
 
 /* Add the media queries for responsive design */

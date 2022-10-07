@@ -122,12 +122,16 @@ optionSelected = (answer) => {
       }
     }
   }
+  for (let i = 0; i < allOptions; i++) {
+    option_list.children[i].classList.add("disabled");
+  }
 };
 
 //timer section
 var timeleft = 300;
 var element = document.querySelector("#timer");
 var timerId = setInterval(counter, 1000);
+
 function counter() {
   if (timeleft == 00) {
     clearTimeout(timerId);
