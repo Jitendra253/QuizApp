@@ -14,7 +14,7 @@
   --light: #bcbcbc;
 }
 
-/* add styles to body */
+/* add animation styles to body */
 body {
   animation: color 9s infinite linear;
 }

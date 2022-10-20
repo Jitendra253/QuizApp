@@ -1,3 +1,4 @@
+// Total 4 categories and 10 questions in each category
 const QUESTIONS = {
   probability: [
     {

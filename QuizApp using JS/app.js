@@ -57,7 +57,7 @@ questionCount = (index, myApp) => {
   let totalQuestioncount = "<span>" + index + " / " + myApp.length + "</span>";
   top_ques_counter.innerHTML = totalQuestioncount;
 };
-//getting question
+//getting question and storing user answer
 showQuestion = (index, elementId, myApp) => {
   let question = myApp[index].question;
   counter();
