@@ -26,8 +26,8 @@ const QUESTIONS = {
     {
       question:
         " The probability that it will rain tomorrow is 0.85. What is the probability that it will not rain tomorrow",
-      options: ["0.25", "0.145", " 0/5", "none of these"],
-      answer: " 3/20",
+      options: ["0.25", "0.145", "3/20", "none of these"],
+      answer: "3/20",
     },
     {
       question:
