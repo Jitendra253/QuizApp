@@ -11,8 +11,8 @@
 
 <body>
   <!-- main  page creation -->
-  <div class="mainPage">
-    <div class="welcome_section">
+  <div id="mainPage">
+    <div id="welcome_section">
       <div class="logo">
         <img src="https://softwarevital.com/wp-content/uploads/2020/07/testbook-logo-1024x1024.jpg" alt="logo-img" />
       </div>
@@ -45,9 +45,8 @@
     </div>
   </div>
   <!-- main page end -->
-
   <!-- question box start -->
-  <div class="question_box" id="question_page" hidden>
+  <div id="question_box">
     <div id="wish">
       <h2>Give Your Best : <span id="wish_name" class="name"></span></h2>
     </div>
@@ -62,7 +61,7 @@
       <legend class="question_count"></legend>
       <div class="questions"></div>
     </fieldset>
-    <div class="answer_option" id="ds" show>
+    <div class="answer_option">
       <span type="button" class="option">1</span>
       <span type="button" class="option">2</span>
       <span type="button" class="option">3</span>
@@ -70,22 +69,21 @@
     </div>
     <div class="next_btn">
       <button type="button" id="next" class="next_question_btn"> Next Question </button>
-      <button type="button" id="rsltbtn" class="see_result_btn" onclick="showResult()" hidden> See Your Result </button>
+      <button type="button" id="rsltbtn" class="see_result_btn" onclick="showResult()"> See Your Result </button>
     </div>
   </div>
   <!--  question  box end-->
-
   <!--  result box start-->
-  <div class="result_box">
+  <div id="result_box">
     <div class="users_result">
       <h2>Quiz Result</h2>
-      <p class="resultPage"> <span class="name" id="user_name">VVVV</span>Your Result Is : </p>
-      <p class="resultPage"> Total Time Taken : <span style="font-weight: bold" id="total_time_taken"> </span> </p>
-      <p class="resultPage"> Total Question : <span style="font-weight: bold" id="total_questions"> 10 </span> </p>
-      <p class="resultPage"> Attempt : <span style="font-weight: bold" id="attempted_questions"> 10 </span> </p>
-      <p class="resultPage"> Correct : <span style="font-weight: bold" id="correct_answers"> </span> </p>
-      <p class="resultPage"> Wrong : <span style="font-weight: bold" id="wrong_answers"> </span> </p>
-      <p class="resultPage"> Percentage : <span style="font-weight: bold" id="result_in_percent"> </span> </p>
+      <p class="resultPage"> <span class="name" id="user_name">user name shows here</span>Your Result Is : </p>
+      <p class="resultPage" id="total_time_taken"> </p>
+      <p class="resultPage" id="total_questions"> Total Question : 10 </p>
+      <p class="resultPage" id="attempted_questions"> Attempt : 10 </p>
+      <p class="resultPage" id="correct_answers"></p>
+      <p class="resultPage" id="wrong_answers"></p>
+      <p class="resultPage" id="result_in_percent"></p>
     </div>
     <div class="last_btn">
       <button class="restart">Start Again</button>
@@ -93,7 +91,6 @@
     </div>
   </div>
   <!--  result box end-->
-
   <!-- Adding External Javascript -->
   <script src="allQuestion.js"></script>
   <script src="app.js"></script>
